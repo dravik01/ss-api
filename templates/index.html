@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Simple Page</title>
+    </head>
+    <body>
+        <h1>Hello world</h1>
+        <button>Search</button>
+    </body>
+    <script>
+        console.log("hello")
+        const userAction = async () => {
+            const response = await fetch('http://127.0.0.1:5000/screenshot');
+            const myJson = await response.json(); //extract JSON from the http response
+            console.log(myJson)
+        }
+    </script>
+</html>
